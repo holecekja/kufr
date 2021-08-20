@@ -5,8 +5,8 @@ body {
 
 #word_wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    //justify-content: center;
 }
 
 #word_container {
@@ -14,14 +14,16 @@ body {
     align-items: center;
     justify-content: center;
     background: rgb(85,102,0);
-    width: 70%;
-    padding: 4rem;
-    min-height: 13rem;
+    width: 100%;
+    padding: 4vh;
+    margin-left: 4vh;
+    margin-right: 25vh;
+    min-height: 15vh;
     border-radius: 3rem;
 }
 
 #word {
-    font-size: 15rem;
+    font-size: 20vh;
     font-weight: bold;
     text-align: center;
 }
@@ -32,25 +34,25 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10rem;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
     background: rgb(153,0,0);
 }
 
 
 .circular_text {
-    font-size: 10rem;
+    font-size: 20vh;
     text-align: center;
 }
 
 
 #points_container {
-    right: 5%;
-    top: 13rem;
+    right: 2vh;
+    top: 20vh;
 }
 
 #timer_container {
-    right: 5%;
-    bottom: 5%;
+    right: 2vh;
+    bottom: 2vh;
 }
