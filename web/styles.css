@@ -1,0 +1,56 @@
+body {
+    background: black;
+    color: white;
+}
+
+#word_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#word_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(85,102,0);
+    width: 70%;
+    padding: 4rem;
+    min-height: 13rem;
+    border-radius: 3rem;
+}
+
+#word {
+    font-size: 15rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.circular_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    background: rgb(153,0,0);
+}
+
+
+.circular_text {
+    font-size: 10rem;
+    text-align: center;
+}
+
+
+#points_container {
+    right: 5%;
+    top: 13rem;
+}
+
+#timer_container {
+    right: 5%;
+    bottom: 5%;
+}

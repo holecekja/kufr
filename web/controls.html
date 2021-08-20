@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kufr</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="file/controls.css">
+
+        <script type="text/javascript" src="file/main.js"></script>
+        <script type="text/javascript" src="file/controls.js"></script>
+
+    </head>
+
+    <body onload="kufr.on_load()">
+        <div class="action_separator"></div>
+        <div class="button" onclick="kufr.nuke()" title="Resets all previously used words, making them available again.">Reset used words</div>
+        <div class="button" onclick="kufr.tryAuthorize()" title="Re-requests a new session from the server. Should only be needed if the server is restarted.">Request authorization</div>
+        <div class="action_separator"></div>
+        <div class="button" onclick="kufr.reset()" title="Stops the current game.">Reset</div>
+        <div class="button" onclick="kufr.start()" title="Starts a new game (only works if there isn't already a game in progress.)">Start</div>
+        <div class="button" onclick="kufr.modifyPoints(1)" title="Adds 1 point to the point counter.">+1 point</div>
+        <div class="button" onclick="kufr.modifyPoints(-1)" title="Removes 1 point from the point counter.">-1 point</div>
+        <div class="button" onclick="kufr.modifyTimer(1)" title="Adds 1 second to the timer.">+1 second</div>
+        <div class="button" onclick="kufr.modifyTimer(-1)" title="Removes 1 second from the timer.">-1 second</div>
+        <div class="action_separator"></div>
+        <div class="button big" onclick="kufr.pause()" title="Pauses the game.">PAUSE</div>
+        <div class="button big" onclick="kufr.resume()" title="Resumes the game.">RESUME</div>
+        <div class="action_separator"></div>
+        <div class="button really_big" onclick="kufr.next()" title="Advances to the next word and increases the point counter by 1.">NEXT</div>
+        <div class="button really_big" onclick="kufr.skip()" title="Advances to the next word, but doesn't change the point counter.">SKIP</div>
+        <div class="action_separator"></div>
+        <div class="really_big">Word: <div id="word" class="inline"></div></div>
+        <div class="action_separator"></div>
+        <div class="big">Time remaining: <div id="timer" class="inline"></div></div>
+        <div>Points: <div id="points" class="inline"></div></div>
+        <div>Status: <div id="status" class="inline"></div></div>
+    </body>
+
+</html>

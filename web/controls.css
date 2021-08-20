@@ -1,0 +1,35 @@
+body {
+    font-size: 1.5rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.3rem;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1rem;
+    background: lightblue;
+}
+
+.button:hover {
+    background: skyblue;
+    cursor: pointer;
+}
+
+.big {
+    font-size: 200%;
+}
+
+.really_big {
+    font-size: 300%;
+}
+
+.action_separator {
+    padding-top: 3rem;
+}
