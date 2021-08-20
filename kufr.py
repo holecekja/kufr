@@ -59,7 +59,6 @@ def main():
         try:
             gameServer.serve_once()
             controlsServer.serve_once()
-            # time.sleep(0.1)
         except KeyboardInterrupt:
             break
         except ConnectionError as ex:
