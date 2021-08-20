@@ -19,6 +19,9 @@ class Authorization:
             return False
 
     def is_authorized(self, request) -> bool:
-        session = request.cookies.get("session")
-        return session is not None and session.value in self.authorizedSessions
+        if self.config.securityPassword is None:
+            return True
+        else:
+            session = request.cookies.get("session")
+            return session is not None and session.value in self.authorizedSessions
 
